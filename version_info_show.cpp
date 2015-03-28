@@ -1,7 +1,9 @@
 #include "version_info_show.h"
 
+#define DLLAPI  extern "C" __declspec(dllexport)
 
-void version_info_show(std::string name ,std::string function ,std::string author ,std::string time )
+
+DLLAPI void  version_info_show(std::string name ,std::string function ,std::string author ,std::string time )
 {
 	std::cout<<"\n";
 	std::cout<<"\n";
